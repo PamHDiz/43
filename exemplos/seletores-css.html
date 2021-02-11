@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+    <style>
+
+        /* Seletor "p" de elemento */
+        p {
+            color: magenta;
+        }
+
+        /* ID */
+        #paragrafo2 {
+            color: lightsalmon;
+        }
+
+        /* Seletor de classe ".bla" */
+        .azul {
+            color: lightskyblue;
+            border: 1px solid blue;
+        }
+
+        /* Nos seletores, existe peso entre os seletores. 
+        Ordem crescente de pesos:
+        Seletor de Elemento < Seletor de Classe < ID < !important
+        */
+
+    </style>
+</head>
+<body>
+
+    <p class="azul">Parágrafo 1 com exemplo de texto</p>
+    <p id="paragrafo2">Parágrafo 2 com exemplo de texto</p>
+    <p class="azul">Parágrafo 3 com exemplo de texto</p>
+    <span class="azul">Texto no span de exemplo</span>
+
+</body>
+</html>
+
+<!-- Tabela de Pesos
+important   |   inline   |   #id    |   .classe   |   elemento  
+    0              0           1            0           0
+    0              0           0            0           4
+-----------------------
+
+#cabecalho {
+    color: blue;
+}
+
+div section p h1 {
+    color : red;
+}
+
+<div>]
+    <section>
+        <p>
+            <h1 id="cabecalho">Meu título</h1>
+        </p>
+    </section>
+</div>
+
+-->
